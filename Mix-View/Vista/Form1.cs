@@ -37,6 +37,9 @@ namespace Mix_View
                 if (ls.Count() > 0)
                 {
                     MessageBox.Show("Acceso Consedido");
+                    FrmInicio frm = new FrmInicio();
+                    frm.Show();
+                    this.Hide();
                 }
                 else
                 {

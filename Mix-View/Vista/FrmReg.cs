@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mix_View.DAO;
+using Mix_View.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,23 @@ namespace Mix_View.Vista
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ClsLoginD Logind = new ClsLoginD();
+            Users user = new Users();
+            user.IdNombre = TxtNombre.Text;
+            user.Gmail = TxtGmail.Text;
+            user.Edad = Convert.ToInt32(TxtEdad.Text);
+            user.Genero = Convert.ToInt32(TxtEdad.Text);
+            user.Pass = TxtPass.Text;
+            Logind.GuardarUser(user);
+
+
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Close();
         }
     }
 }
