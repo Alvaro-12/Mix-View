@@ -21,5 +21,10 @@ namespace Mix_View
         {
 
         }
+
+        private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

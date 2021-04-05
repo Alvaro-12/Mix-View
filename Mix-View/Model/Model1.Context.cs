@@ -13,10 +13,10 @@ namespace Mix_View.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MixViewBDEntities : DbContext
+    public partial class MixViewDBEntities : DbContext
     {
-        public MixViewBDEntities()
-            : base("name=MixViewBDEntities")
+        public MixViewDBEntities()
+            : base("name=MixViewDBEntities")
         {
         }
     
@@ -25,6 +25,6 @@ namespace Mix_View.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<MixUsuario> MixUsuario { get; set; }
+        public virtual DbSet<Users> Users { get; set; }
     }
 }

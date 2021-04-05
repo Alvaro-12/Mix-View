@@ -12,9 +12,12 @@ namespace Mix_View.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class MixUsuario
+    public partial class Users
     {
-        public string IdUserName { get; set; }
+        public string IdNombre { get; set; }
         public string Pass { get; set; }
+        public string Gmail { get; set; }
+        public Nullable<int> Edad { get; set; }
+        public Nullable<int> Genero { get; set; }
     }
 }

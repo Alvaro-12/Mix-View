@@ -45,6 +45,7 @@ namespace Mix_View
             this.BtnEntrar.TabIndex = 0;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.UseVisualStyleBackColor = true;
+            this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
             // 
             // label1
             // 
