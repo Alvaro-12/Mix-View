@@ -16,5 +16,10 @@ namespace Mix_View
         {
             InitializeComponent();
         }
+
+        private void Usuario_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
