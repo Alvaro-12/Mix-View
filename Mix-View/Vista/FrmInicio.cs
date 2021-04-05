@@ -16,5 +16,15 @@ namespace Mix_View.Vista
         {
             InitializeComponent();
         }
+
+        private void FrmInicio_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmInicio_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
