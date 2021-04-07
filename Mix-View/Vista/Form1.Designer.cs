@@ -58,7 +58,7 @@ namespace Mix_View
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 53);
+            this.label1.Location = new System.Drawing.Point(84, 87);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 17);
@@ -69,7 +69,7 @@ namespace Mix_View
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 117);
+            this.label2.Location = new System.Drawing.Point(72, 148);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 17);
@@ -78,7 +78,7 @@ namespace Mix_View
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Location = new System.Drawing.Point(163, 53);
+            this.TxtUsuario.Location = new System.Drawing.Point(172, 87);
             this.TxtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(205, 22);
@@ -86,7 +86,7 @@ namespace Mix_View
             // 
             // TxtPassword
             // 
-            this.TxtPassword.Location = new System.Drawing.Point(163, 117);
+            this.TxtPassword.Location = new System.Drawing.Point(172, 145);
             this.TxtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtPassword.Name = "TxtPassword";
             this.TxtPassword.Size = new System.Drawing.Size(205, 22);
@@ -109,7 +109,7 @@ namespace Mix_View
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(-2, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 46);
             this.panel1.TabIndex = 6;
