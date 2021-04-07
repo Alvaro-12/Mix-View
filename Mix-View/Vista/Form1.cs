@@ -73,5 +73,10 @@ namespace Mix_View
             WindowState = FormWindowState.Normal;
             TopMost = true;
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }
