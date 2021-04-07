@@ -176,6 +176,7 @@ namespace Mix_View.Vista
             this.Controls.Add(this.label1);
             this.Name = "FrmReg";
             this.Text = "FrmReg";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmReg_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,9 +17,19 @@ namespace Mix_View
     {
         public Form1()
         {
+            //mantiene el comportamiento en splascreen
+            Thread t = new Thread(new ThreadStart(SplashStart));
+            t.Start();
+            Thread.Sleep(5000);
             InitializeComponent();
-        }
+            t.Abort();
 
+           
+        }
+        public void SplashStart()
+        {
+            Application.Run(new FrmSlpashScreen());
+        }
         private void Usuario_Click(object sender, EventArgs e)
         {
 
@@ -54,6 +65,13 @@ namespace Mix_View
             FrmReg reg = new FrmReg();
             reg.Show();
             this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //Funciona para presentar el formulario con normalidad 
+            WindowState = FormWindowState.Normal;
+            TopMost = true;
         }
     }
 }

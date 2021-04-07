@@ -40,5 +40,10 @@ namespace Mix_View.Vista
             frm.Show();
             this.Close();
         }
+
+        private void FrmReg_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
