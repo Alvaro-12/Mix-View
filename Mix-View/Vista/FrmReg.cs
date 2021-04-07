@@ -31,7 +31,7 @@ namespace Mix_View.Vista
             user.IdNombre = TxtNombre.Text;
             user.Gmail = TxtGmail.Text;
             user.Edad = Convert.ToInt32(TxtEdad.Text);
-            user.Genero = Convert.ToInt32(TxtEdad.Text);
+            user.Genero = RdM.Checked == true ? 1 : 2; ;
             user.Pass = TxtPass.Text;
             Logind.GuardarUser(user);
 

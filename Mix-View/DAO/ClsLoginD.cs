@@ -21,7 +21,7 @@ namespace Mix_View.DAO
                     users.Gmail = user.Gmail;
                     users.Pass = user.Pass;
                     users.Edad = user.Edad;
-                    users.Genero = user.Edad;
+                    users.Genero = user.Genero;
 
                     db.Users.Add(users);
                     db.SaveChanges();
