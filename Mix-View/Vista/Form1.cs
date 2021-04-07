@@ -78,5 +78,10 @@ namespace Mix_View
         {
             this.Dispose();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
