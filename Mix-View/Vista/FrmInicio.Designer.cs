@@ -31,29 +31,29 @@ namespace Mix_View.Vista
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.PnlMenu = new System.Windows.Forms.Panel();
-            this.PnlEmergente = new System.Windows.Forms.Panel();
-            this.Salir = new System.Windows.Forms.Button();
-            this.Informacion = new System.Windows.Forms.Button();
-            this.PnlBtn1 = new System.Windows.Forms.Panel();
-            this.BtnInfoCuenta = new System.Windows.Forms.Button();
-            this.PnlContenedor = new System.Windows.Forms.Panel();
-            this.PnlMenu2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.PnlMenu3 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnInfo = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
+            this.BtnInfocuenta = new System.Windows.Forms.Button();
+            this.PnlMenu2 = new System.Windows.Forms.Panel();
+            this.BtnTerror = new System.Windows.Forms.Button();
+            this.BtnComedia = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Btngenero = new System.Windows.Forms.Button();
+            this.PnlEmergente = new System.Windows.Forms.Panel();
+            this.BtnPeliculas = new System.Windows.Forms.Button();
+            this.BtnSeries = new System.Windows.Forms.Button();
+            this.PnlBtn1 = new System.Windows.Forms.Panel();
+            this.BtnInicio = new System.Windows.Forms.Button();
+            this.PnlContenedor = new System.Windows.Forms.Panel();
             this.PnlMenu.SuspendLayout();
-            this.PnlEmergente.SuspendLayout();
-            this.PnlBtn1.SuspendLayout();
-            this.PnlMenu2.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.PnlMenu3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.PnlMenu2.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.PnlEmergente.SuspendLayout();
+            this.PnlBtn1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlMenu
@@ -70,10 +70,113 @@ namespace Mix_View.Vista
             this.PnlMenu.Size = new System.Drawing.Size(305, 661);
             this.PnlMenu.TabIndex = 0;
             // 
+            // PnlMenu3
+            // 
+            this.PnlMenu3.Controls.Add(this.BtnSalir);
+            this.PnlMenu3.Controls.Add(this.BtnInfo);
+            this.PnlMenu3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlMenu3.Location = new System.Drawing.Point(0, 209);
+            this.PnlMenu3.Name = "PnlMenu3";
+            this.PnlMenu3.Size = new System.Drawing.Size(305, 55);
+            this.PnlMenu3.TabIndex = 5;
+            this.PnlMenu3.Visible = false;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSalir.Location = new System.Drawing.Point(0, 23);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(305, 23);
+            this.BtnSalir.TabIndex = 1;
+            this.BtnSalir.Text = "Salir ";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // BtnInfo
+            // 
+            this.BtnInfo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnInfo.Location = new System.Drawing.Point(0, 0);
+            this.BtnInfo.Name = "BtnInfo";
+            this.BtnInfo.Size = new System.Drawing.Size(305, 23);
+            this.BtnInfo.TabIndex = 0;
+            this.BtnInfo.Text = "Informacion ";
+            this.BtnInfo.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.BtnInfocuenta);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 176);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(305, 33);
+            this.panel4.TabIndex = 4;
+            // 
+            // BtnInfocuenta
+            // 
+            this.BtnInfocuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnInfocuenta.Location = new System.Drawing.Point(0, 0);
+            this.BtnInfocuenta.Name = "BtnInfocuenta";
+            this.BtnInfocuenta.Size = new System.Drawing.Size(305, 27);
+            this.BtnInfocuenta.TabIndex = 0;
+            this.BtnInfocuenta.Text = "Informacion Cuenta ";
+            this.BtnInfocuenta.UseVisualStyleBackColor = true;
+            this.BtnInfocuenta.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // PnlMenu2
+            // 
+            this.PnlMenu2.Controls.Add(this.BtnTerror);
+            this.PnlMenu2.Controls.Add(this.BtnComedia);
+            this.PnlMenu2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PnlMenu2.Location = new System.Drawing.Point(0, 121);
+            this.PnlMenu2.Name = "PnlMenu2";
+            this.PnlMenu2.Size = new System.Drawing.Size(305, 55);
+            this.PnlMenu2.TabIndex = 3;
+            this.PnlMenu2.Visible = false;
+            // 
+            // BtnTerror
+            // 
+            this.BtnTerror.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnTerror.Location = new System.Drawing.Point(0, 23);
+            this.BtnTerror.Name = "BtnTerror";
+            this.BtnTerror.Size = new System.Drawing.Size(305, 23);
+            this.BtnTerror.TabIndex = 1;
+            this.BtnTerror.Text = "Terror";
+            this.BtnTerror.UseVisualStyleBackColor = true;
+            // 
+            // BtnComedia
+            // 
+            this.BtnComedia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnComedia.Location = new System.Drawing.Point(0, 0);
+            this.BtnComedia.Name = "BtnComedia";
+            this.BtnComedia.Size = new System.Drawing.Size(305, 23);
+            this.BtnComedia.TabIndex = 0;
+            this.BtnComedia.Text = "Comedia";
+            this.BtnComedia.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Btngenero);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 88);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(305, 33);
+            this.panel2.TabIndex = 2;
+            // 
+            // Btngenero
+            // 
+            this.Btngenero.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btngenero.Location = new System.Drawing.Point(0, 0);
+            this.Btngenero.Name = "Btngenero";
+            this.Btngenero.Size = new System.Drawing.Size(305, 27);
+            this.Btngenero.TabIndex = 0;
+            this.Btngenero.Text = "Genero ";
+            this.Btngenero.UseVisualStyleBackColor = true;
+            this.Btngenero.Click += new System.EventHandler(this.button3_Click);
+            // 
             // PnlEmergente
             // 
-            this.PnlEmergente.Controls.Add(this.Salir);
-            this.PnlEmergente.Controls.Add(this.Informacion);
+            this.PnlEmergente.Controls.Add(this.BtnPeliculas);
+            this.PnlEmergente.Controls.Add(this.BtnSeries);
             this.PnlEmergente.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlEmergente.Location = new System.Drawing.Point(0, 33);
             this.PnlEmergente.Name = "PnlEmergente";
@@ -81,46 +184,46 @@ namespace Mix_View.Vista
             this.PnlEmergente.TabIndex = 1;
             this.PnlEmergente.Visible = false;
             // 
-            // Salir
+            // BtnPeliculas
             // 
-            this.Salir.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Salir.Location = new System.Drawing.Point(0, 23);
-            this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(305, 23);
-            this.Salir.TabIndex = 1;
-            this.Salir.Text = "Pelicula";
-            this.Salir.UseVisualStyleBackColor = true;
-            this.Salir.Click += new System.EventHandler(this.Salir_Click);
+            this.BtnPeliculas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnPeliculas.Location = new System.Drawing.Point(0, 23);
+            this.BtnPeliculas.Name = "BtnPeliculas";
+            this.BtnPeliculas.Size = new System.Drawing.Size(305, 23);
+            this.BtnPeliculas.TabIndex = 1;
+            this.BtnPeliculas.Text = "Pelicula";
+            this.BtnPeliculas.UseVisualStyleBackColor = true;
+            this.BtnPeliculas.Click += new System.EventHandler(this.Salir_Click);
             // 
-            // Informacion
+            // BtnSeries
             // 
-            this.Informacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Informacion.Location = new System.Drawing.Point(0, 0);
-            this.Informacion.Name = "Informacion";
-            this.Informacion.Size = new System.Drawing.Size(305, 23);
-            this.Informacion.TabIndex = 0;
-            this.Informacion.Text = "Serie";
-            this.Informacion.UseVisualStyleBackColor = true;
+            this.BtnSeries.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnSeries.Location = new System.Drawing.Point(0, 0);
+            this.BtnSeries.Name = "BtnSeries";
+            this.BtnSeries.Size = new System.Drawing.Size(305, 23);
+            this.BtnSeries.TabIndex = 0;
+            this.BtnSeries.Text = "Serie";
+            this.BtnSeries.UseVisualStyleBackColor = true;
             // 
             // PnlBtn1
             // 
-            this.PnlBtn1.Controls.Add(this.BtnInfoCuenta);
+            this.PnlBtn1.Controls.Add(this.BtnInicio);
             this.PnlBtn1.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlBtn1.Location = new System.Drawing.Point(0, 0);
             this.PnlBtn1.Name = "PnlBtn1";
             this.PnlBtn1.Size = new System.Drawing.Size(305, 33);
             this.PnlBtn1.TabIndex = 0;
             // 
-            // BtnInfoCuenta
+            // BtnInicio
             // 
-            this.BtnInfoCuenta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnInfoCuenta.Location = new System.Drawing.Point(0, 0);
-            this.BtnInfoCuenta.Name = "BtnInfoCuenta";
-            this.BtnInfoCuenta.Size = new System.Drawing.Size(305, 27);
-            this.BtnInfoCuenta.TabIndex = 0;
-            this.BtnInfoCuenta.Text = "Inicio ";
-            this.BtnInfoCuenta.UseVisualStyleBackColor = true;
-            this.BtnInfoCuenta.Click += new System.EventHandler(this.button1_Click);
+            this.BtnInicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnInicio.Location = new System.Drawing.Point(0, 0);
+            this.BtnInicio.Name = "BtnInicio";
+            this.BtnInicio.Size = new System.Drawing.Size(305, 27);
+            this.BtnInicio.TabIndex = 0;
+            this.BtnInicio.Text = "Inicio ";
+            this.BtnInicio.UseVisualStyleBackColor = true;
+            this.BtnInicio.Click += new System.EventHandler(this.button1_Click);
             // 
             // PnlContenedor
             // 
@@ -129,107 +232,6 @@ namespace Mix_View.Vista
             this.PnlContenedor.Name = "PnlContenedor";
             this.PnlContenedor.Size = new System.Drawing.Size(670, 661);
             this.PnlContenedor.TabIndex = 1;
-            // 
-            // PnlMenu2
-            // 
-            this.PnlMenu2.Controls.Add(this.button1);
-            this.PnlMenu2.Controls.Add(this.button2);
-            this.PnlMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlMenu2.Location = new System.Drawing.Point(0, 121);
-            this.PnlMenu2.Name = "PnlMenu2";
-            this.PnlMenu2.Size = new System.Drawing.Size(305, 55);
-            this.PnlMenu2.TabIndex = 3;
-            this.PnlMenu2.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.Location = new System.Drawing.Point(0, 23);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(305, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Terror";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Location = new System.Drawing.Point(0, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(305, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Comedia";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 88);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(305, 33);
-            this.panel2.TabIndex = 2;
-            // 
-            // button3
-            // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Location = new System.Drawing.Point(0, 0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(305, 27);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Genero ";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // PnlMenu3
-            // 
-            this.PnlMenu3.Controls.Add(this.button4);
-            this.PnlMenu3.Controls.Add(this.button5);
-            this.PnlMenu3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PnlMenu3.Location = new System.Drawing.Point(0, 209);
-            this.PnlMenu3.Name = "PnlMenu3";
-            this.PnlMenu3.Size = new System.Drawing.Size(305, 55);
-            this.PnlMenu3.TabIndex = 5;
-            this.PnlMenu3.Visible = false;
-            // 
-            // button4
-            // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.Location = new System.Drawing.Point(0, 23);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(305, 23);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Salir ";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(305, 23);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Informacion ";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 176);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(305, 33);
-            this.panel4.TabIndex = 4;
-            // 
-            // button6
-            // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button6.Location = new System.Drawing.Point(0, 0);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(305, 27);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Informacion Cuenta ";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // FrmInicio
             // 
@@ -245,12 +247,12 @@ namespace Mix_View.Vista
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmInicio_FormClosing);
             this.Load += new System.EventHandler(this.FrmInicio_Load);
             this.PnlMenu.ResumeLayout(false);
-            this.PnlEmergente.ResumeLayout(false);
-            this.PnlBtn1.ResumeLayout(false);
-            this.PnlMenu2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.PnlMenu3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.PnlMenu2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.PnlEmergente.ResumeLayout(false);
+            this.PnlBtn1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -259,20 +261,20 @@ namespace Mix_View.Vista
 
         private System.Windows.Forms.Panel PnlMenu;
         private System.Windows.Forms.Panel PnlEmergente;
-        private System.Windows.Forms.Button Salir;
-        private System.Windows.Forms.Button Informacion;
+        private System.Windows.Forms.Button BtnPeliculas;
+        private System.Windows.Forms.Button BtnSeries;
         private System.Windows.Forms.Panel PnlBtn1;
-        private System.Windows.Forms.Button BtnInfoCuenta;
+        private System.Windows.Forms.Button BtnInicio;
         private System.Windows.Forms.Panel PnlContenedor;
         private System.Windows.Forms.Panel PnlMenu3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnInfo;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button BtnInfocuenta;
         private System.Windows.Forms.Panel PnlMenu2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnTerror;
+        private System.Windows.Forms.Button BtnComedia;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Btngenero;
     }
 }

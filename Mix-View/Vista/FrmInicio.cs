@@ -40,9 +40,7 @@ namespace Mix_View.Vista
 
         private void Salir_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            frm.Show();
-            this.Close();
+           
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -55,6 +53,25 @@ namespace Mix_View.Vista
             {
                 PnlMenu2.Visible = false;
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (PnlMenu3.Visible == false)
+            {
+                PnlMenu3.Visible = true;
+            }
+            else
+            {
+                PnlMenu3.Visible = false;
+            }
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Hide();
         }
     }
 }
