@@ -30,6 +30,7 @@ namespace Mix_View.Vista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReg));
             this.label1 = new System.Windows.Forms.Label();
             this.Gmail = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
@@ -174,6 +175,7 @@ namespace Mix_View.Vista
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Gmail);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReg";
             this.Text = "FrmReg";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmReg_FormClosing);

@@ -30,6 +30,7 @@ namespace Mix_View.Vista
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSlpashScreen));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
@@ -37,7 +38,7 @@ namespace Mix_View.Vista
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 650;
+            this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // progressBar1
@@ -55,6 +56,7 @@ namespace Mix_View.Vista
             this.ClientSize = new System.Drawing.Size(290, 210);
             this.Controls.Add(this.progressBar1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSlpashScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmSlpashScreen";
