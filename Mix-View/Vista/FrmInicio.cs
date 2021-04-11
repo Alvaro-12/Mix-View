@@ -29,7 +29,20 @@ namespace Mix_View.Vista
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if (PnlEmergente.Visible == false)
+            {
+                PnlEmergente.Visible = true;
+            }else
+            {
+                PnlEmergente.Visible = false;
+            }
+        }
 
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            Form1 frm = new Form1();
+            frm.Show();
+            this.Close();
         }
     }
 }

@@ -61,6 +61,7 @@ namespace Mix_View.Vista
             this.PnlEmergente.Name = "PnlEmergente";
             this.PnlEmergente.Size = new System.Drawing.Size(305, 55);
             this.PnlEmergente.TabIndex = 1;
+            this.PnlEmergente.Visible = false;
             // 
             // Salir
             // 
@@ -71,6 +72,7 @@ namespace Mix_View.Vista
             this.Salir.TabIndex = 1;
             this.Salir.Text = "Salir ";
             this.Salir.UseVisualStyleBackColor = true;
+            this.Salir.Click += new System.EventHandler(this.Salir_Click);
             // 
             // Informacion
             // 
