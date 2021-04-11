@@ -44,5 +44,17 @@ namespace Mix_View.Vista
             frm.Show();
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (PnlMenu2.Visible == false)
+            {
+                PnlMenu2.Visible = true;
+            }
+            else
+            {
+                PnlMenu2.Visible = false;
+            }
+        }
     }
 }
