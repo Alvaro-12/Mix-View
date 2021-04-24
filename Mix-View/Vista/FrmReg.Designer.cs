@@ -44,13 +44,21 @@ namespace Mix_View.Vista
             this.TxtEdad = new System.Windows.Forms.TextBox();
             this.TxtPass = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 62);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(25, 139);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 0;
@@ -59,7 +67,8 @@ namespace Mix_View.Vista
             // Gmail
             // 
             this.Gmail.AutoSize = true;
-            this.Gmail.Location = new System.Drawing.Point(42, 136);
+            this.Gmail.ForeColor = System.Drawing.Color.White;
+            this.Gmail.Location = new System.Drawing.Point(43, 197);
             this.Gmail.Name = "Gmail";
             this.Gmail.Size = new System.Drawing.Size(33, 13);
             this.Gmail.TabIndex = 1;
@@ -68,7 +77,8 @@ namespace Mix_View.Vista
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(42, 205);
+            this.Label3.ForeColor = System.Drawing.Color.White;
+            this.Label3.Location = new System.Drawing.Point(43, 266);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(32, 13);
             this.Label3.TabIndex = 2;
@@ -77,7 +87,8 @@ namespace Mix_View.Vista
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(42, 271);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(43, 332);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 3;
@@ -87,9 +98,10 @@ namespace Mix_View.Vista
             // 
             this.groupBox1.Controls.Add(this.RdM);
             this.groupBox1.Controls.Add(this.Rdf);
-            this.groupBox1.Location = new System.Drawing.Point(45, 327);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(75, 380);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(288, 100);
+            this.groupBox1.Size = new System.Drawing.Size(288, 51);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Genero";
@@ -98,7 +110,8 @@ namespace Mix_View.Vista
             // RdM
             // 
             this.RdM.AutoSize = true;
-            this.RdM.Location = new System.Drawing.Point(160, 48);
+            this.RdM.ForeColor = System.Drawing.Color.White;
+            this.RdM.Location = new System.Drawing.Point(162, 19);
             this.RdM.Name = "RdM";
             this.RdM.Size = new System.Drawing.Size(73, 17);
             this.RdM.TabIndex = 1;
@@ -109,7 +122,8 @@ namespace Mix_View.Vista
             // Rdf
             // 
             this.Rdf.AutoSize = true;
-            this.Rdf.Location = new System.Drawing.Point(48, 48);
+            this.Rdf.ForeColor = System.Drawing.Color.White;
+            this.Rdf.Location = new System.Drawing.Point(45, 19);
             this.Rdf.Name = "Rdf";
             this.Rdf.Size = new System.Drawing.Size(71, 17);
             this.Rdf.TabIndex = 0;
@@ -124,47 +138,103 @@ namespace Mix_View.Vista
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(146, 59);
+            this.TxtNombre.Location = new System.Drawing.Point(147, 132);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(227, 20);
             this.TxtNombre.TabIndex = 6;
             // 
             // TxtGmail
             // 
-            this.TxtGmail.Location = new System.Drawing.Point(146, 136);
+            this.TxtGmail.Location = new System.Drawing.Point(147, 197);
             this.TxtGmail.Name = "TxtGmail";
             this.TxtGmail.Size = new System.Drawing.Size(227, 20);
             this.TxtGmail.TabIndex = 7;
             // 
             // TxtEdad
             // 
-            this.TxtEdad.Location = new System.Drawing.Point(146, 202);
+            this.TxtEdad.Location = new System.Drawing.Point(147, 263);
             this.TxtEdad.Name = "TxtEdad";
             this.TxtEdad.Size = new System.Drawing.Size(227, 20);
             this.TxtEdad.TabIndex = 8;
             // 
             // TxtPass
             // 
-            this.TxtPass.Location = new System.Drawing.Point(146, 271);
+            this.TxtPass.Location = new System.Drawing.Point(147, 332);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.Size = new System.Drawing.Size(227, 20);
             this.TxtPass.TabIndex = 9;
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Purple;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(170, 452);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
             this.button1.Text = "Registrarse";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(417, 32);
+            this.panel1.TabIndex = 11;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(357, 3);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(385, 3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(3, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Registro";
             // 
             // FrmReg
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(417, 507);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtPass);
             this.Controls.Add(this.TxtEdad);
@@ -175,12 +245,17 @@ namespace Mix_View.Vista
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Gmail);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReg";
             this.Text = "FrmReg";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmReg_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,5 +276,9 @@ namespace Mix_View.Vista
         private System.Windows.Forms.RadioButton RdM;
         private System.Windows.Forms.RadioButton Rdf;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
