@@ -14,7 +14,8 @@ namespace Mix_View.Model
     
     public partial class Users
     {
-        public string IdNombre { get; set; }
+        public int id { get; set; }
+        public string Nombre { get; set; }
         public string Pass { get; set; }
         public string Gmail { get; set; }
         public Nullable<int> Edad { get; set; }
