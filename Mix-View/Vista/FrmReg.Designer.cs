@@ -45,9 +45,9 @@ namespace Mix_View.Vista
             this.TxtPass = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -192,12 +192,22 @@ namespace Mix_View.Vista
             this.panel1.Size = new System.Drawing.Size(417, 32);
             this.panel1.TabIndex = 11;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(3, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Registro";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(357, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(344, 3);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 27);
@@ -217,16 +227,6 @@ namespace Mix_View.Vista
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 13);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Registro";
             // 
             // FrmReg
             // 
