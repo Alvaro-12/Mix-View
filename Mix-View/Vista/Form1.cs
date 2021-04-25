@@ -20,7 +20,7 @@ namespace Mix_View
             //mantiene el comportamiento en splascreen
             Thread t = new Thread(new ThreadStart(SplashStart));
             t.Start();
-            Thread.Sleep(5000);
+            Thread.Sleep(200);
             InitializeComponent();
             t.Abort();
 
