@@ -18,19 +18,10 @@ namespace Mix_View
     {
         public Form1()
         {
-            //mantiene el comportamiento en splascreen
-            Thread t = new Thread(new ThreadStart(SplashStart));
-            t.Start();
-            Thread.Sleep(200);
-            InitializeComponent();
-            t.Abort();
 
-           
+            InitializeComponent();
         }
-        public void SplashStart()
-        {
-            Application.Run(new FrmSlpashScreen());
-        }
+     
         private void Usuario_Click(object sender, EventArgs e)
         {
 
@@ -51,12 +42,7 @@ namespace Mix_View
             this.Hide();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            //Funciona para presentar el formulario con normalidad 
-            WindowState = FormWindowState.Normal;
-            TopMost = true;
-        }
+     
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -66,6 +52,11 @@ namespace Mix_View
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
