@@ -17,7 +17,7 @@ namespace Mix_View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmInicio());
+            Application.Run(new Form1());
         }
     }
 }

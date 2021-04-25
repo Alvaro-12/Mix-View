@@ -12,26 +12,41 @@ namespace Mix_View.DAO
     {
         public void GuardarUser(Users user)
         {
-            try
-            {
+          
                 Users users = new Users();
-                using (MixViewDBEntities db = new MixViewDBEntities())
-                {
-                    users.Nombre = user.Nombre;
-                    users.Gmail = user.Gmail;
-                    users.Pass = user.Pass;
-                    users.Edad = user.Edad;
-                    users.Genero = user.Genero;
-
-                    db.Users.Add(users);
-                    db.SaveChanges();
-
-                    MessageBox.Show("Se ah Registrado a " + user.Nombre);
-                }
-            }
-            catch
+            using (MixViewDBEntities db = new MixViewDBEntities())
             {
-                MessageBox.Show("Nombre de usuario ya registrado intenta con otro");
+                users.Nombre = user.Nombre;
+                users.Gmail = user.Gmail;
+                users.Pass = user.Pass;
+                users.Edad = user.Edad;
+                users.Genero = user.Genero;
+
+                db.Users.Add(users);
+                db.SaveChanges();
+
+                MessageBox.Show("Se ah Registrado a " + user.Nombre);
+            }
+        }
+        public void entrar(string user, string pass)
+        {
+            using (MixViewDBEntities db = new MixViewDBEntities())
+            {
+                var ls = from l in db.Users
+                         where l.Nombre == user &&
+                         l.Pass == pass
+                         select l.Id;
+                
+                if (ls.Count() > 0)
+                {
+                    MessageBox.Show("Bienvenido a Mix-View " + user);
+
+                }
+                else
+                {
+                    MessageBox.Show("Acceso Denegado");
+                }
+
             }
         }
     }

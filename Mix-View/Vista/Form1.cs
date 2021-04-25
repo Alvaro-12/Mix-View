@@ -1,4 +1,5 @@
-﻿using Mix_View.Model;
+﻿using Mix_View.DAO;
+using Mix_View.Model;
 using Mix_View.Vista;
 using System;
 using System.Collections.Generic;
@@ -37,27 +38,10 @@ namespace Mix_View
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-            using (MixViewDBEntities db = new MixViewDBEntities())
-            {
 
-                var ls = from l in db.Users
-                         where l.Nombre == TxtUsuario.Text &&
-                         l.Pass == TxtPassword.Text
-                         select l;
-
-                if (ls.Count() > 0)
-                {
-                    MessageBox.Show("Acceso Consedido");
-                    FrmInicio frm = new FrmInicio();
-                    frm.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Acceso Denegado");
-                }
-
-            }
+            ClsLoginD logD = new ClsLoginD();
+            logD.entrar(TxtUsuario.Text,TxtPassword.Text);
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
