@@ -20,13 +20,18 @@ namespace Mix_View.Vista
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Empieza a incrementar barra
-            progressBar1.Increment(16);
+            progressBar1.Increment(30);
             //Al llegar al maximo la barra se detiene
             if (progressBar1.Value == 100)
             {
                 timer1.Stop();
 
             }
+        }
+
+        private void FrmSlpashScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
