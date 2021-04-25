@@ -28,7 +28,7 @@ namespace Mix_View.Vista
         {
             ClsLoginD Logind = new ClsLoginD();
             Users user = new Users();
-            user.IdNombre = TxtNombre.Text;
+            user.Nombre = TxtNombre.Text;
             user.Gmail = TxtGmail.Text;
             user.Edad = Convert.ToInt32(TxtEdad.Text);
             user.Genero = RdM.Checked == true ? 1 : 2; ;

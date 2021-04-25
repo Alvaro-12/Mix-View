@@ -41,7 +41,7 @@ namespace Mix_View
             {
 
                 var ls = from l in db.Users
-                         where l.IdNombre == TxtUsuario.Text &&
+                         where l.Nombre == TxtUsuario.Text &&
                          l.Pass == TxtPassword.Text
                          select l;
 

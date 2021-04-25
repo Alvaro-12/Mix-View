@@ -17,7 +17,7 @@ namespace Mix_View.DAO
                 Users users = new Users();
                 using (MixViewDBEntities db = new MixViewDBEntities())
                 {
-                    users.IdNombre = user.IdNombre;
+                    users.Nombre = user.Nombre;
                     users.Gmail = user.Gmail;
                     users.Pass = user.Pass;
                     users.Edad = user.Edad;
@@ -26,7 +26,7 @@ namespace Mix_View.DAO
                     db.Users.Add(users);
                     db.SaveChanges();
 
-                    MessageBox.Show("Se ah Registrado a " + user.IdNombre);
+                    MessageBox.Show("Se ah Registrado a " + user.Nombre);
                 }
             }
             catch
