@@ -27,5 +27,36 @@ namespace Mix_View.DAO
                 MessageBox.Show("Se han realizado los cambios!!");
             }
         }
+        public int Id;
+        public string Nombre;
+        public string Gmail;
+        public int Edad;
+        public int Genero;
+        public string Pass;
+        public void cargardatos(int id)
+        {
+
+            using (MixViewDBEntities db = new MixViewDBEntities())
+            {
+
+                Users users = db.Users.Where(x => x.Id == id).Select(x => x).FirstOrDefault();
+                Id = id;
+                Nombre = users.Nombre;
+                Gmail = users.Gmail;
+                Edad = (int)users.Edad;
+                if (users.Genero == 1)
+                {
+                    Genero = 1;
+                }
+                else
+                {
+                    Genero = 2;
+                }
+                Pass = users.Pass;
+
+
+            }
+
+        }
     }
 }
