@@ -28,7 +28,7 @@ namespace Mix_View.DAO
                 MessageBox.Show("Se ah Registrado a " + user.Nombre);
             }
         }
-        public void entrar(string user, string pass)
+            public void entrar(string user, string pass)
         {
             using (MixViewDBEntities db = new MixViewDBEntities())
             {
