@@ -24,7 +24,7 @@ namespace Mix_View.Vista
 
         private void FrmInicio_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,9 +69,8 @@ namespace Mix_View.Vista
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            frm.Show();
-            this.Hide();
+            this.Owner.Show();
+            this.Close();
         }
     }
 }

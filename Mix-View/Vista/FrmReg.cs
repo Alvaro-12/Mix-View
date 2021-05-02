@@ -34,16 +34,20 @@ namespace Mix_View.Vista
             user.Genero = RdM.Checked == true ? 1 : 2; ;
             user.Pass = TxtPass.Text;
             Logind.GuardarUser(user);
-
-
-            Form1 frm = new Form1();
-            frm.Show();
-            this.Close();
+            if (Logind.reference == 1)
+            {
+                MessageBox.Show("Usuario ya registrado intenta con otro");
+            }
+            else
+            {
+                this.Owner.Show();
+                this.Close();
+            }
         }
 
         private void FrmReg_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            
         }
     }
 }

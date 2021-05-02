@@ -10,22 +10,32 @@ namespace Mix_View.DAO
 {
     class ClsLoginD
     {
+        public int reference;
         public void GuardarUser(Users user)
         {
-          
-                Users users = new Users();
+            Users users = new Users();
             using (MixViewDBEntities db = new MixViewDBEntities())
             {
-                users.Nombre = user.Nombre;
-                users.Gmail = user.Gmail;
-                users.Pass = user.Pass;
-                users.Edad = user.Edad;
-                users.Genero = user.Genero;
+                var ls = from l in db.Users
+                         where l.Nombre == user.Nombre
+                         select l;
+                if (ls.Count() > 0)
+                {
+                    reference = 1;
+                }
+                else
+                {
+                    users.Nombre = user.Nombre;
+                    users.Gmail = user.Gmail;
+                    users.Pass = user.Pass;
+                    users.Edad = user.Edad;
+                    users.Genero = user.Genero;
 
-                db.Users.Add(users);
-                db.SaveChanges();
+                    db.Users.Add(users);
+                    db.SaveChanges();
 
-                MessageBox.Show("Se ah Registrado a " + user.Nombre);
+                    MessageBox.Show("Se ah Registrado a " + user.Nombre);
+                }
             }
         }
             public void entrar(string user, string pass)
@@ -36,17 +46,12 @@ namespace Mix_View.DAO
                          where l.Nombre == user &&
                          l.Pass == pass
                          select l.Id;
-                
+                ClsAlmacenId.Id = ls.FirstOrDefault();
                 if (ls.Count() > 0)
                 {
                     MessageBox.Show("Bienvenido a Mix-View " + user);
 
                 }
-                else
-                {
-                    MessageBox.Show("Acceso Denegado");
-                }
-
             }
         }
     }

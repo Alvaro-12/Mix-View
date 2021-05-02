@@ -32,13 +32,25 @@ namespace Mix_View
 
             ClsLoginD logD = new ClsLoginD();
             logD.entrar(TxtUsuario.Text,TxtPassword.Text);
+            if(ClsAlmacenId.Id != 0)
+            {
+                FrmInicio ini = new FrmInicio();
+                ini.Show(this);
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Usuario Incorrecto"); 
+            }
+            
+
             
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FrmReg reg = new FrmReg();
-            reg.Show();
+            reg.Show(this);
             this.Hide();
         }
 
@@ -46,7 +58,7 @@ namespace Mix_View
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
