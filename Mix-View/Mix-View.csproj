@@ -58,6 +58,7 @@
     <Compile Include="DAO\ClsAlmacenId.cs" />
     <Compile Include="DAO\ClsInfoCuentaD.cs" />
     <Compile Include="DAO\ClsLoginD.cs" />
+    <Compile Include="DAO\ClsReproductor.cs" />
     <Compile Include="Model\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
