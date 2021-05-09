@@ -113,13 +113,18 @@ namespace Mix_View.Vista
             // 
             // BtnInfocuenta
             // 
+            this.BtnInfocuenta.BackColor = System.Drawing.Color.Purple;
             this.BtnInfocuenta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnInfocuenta.FlatAppearance.BorderSize = 0;
+            this.BtnInfocuenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BtnInfocuenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
+            this.BtnInfocuenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnInfocuenta.Location = new System.Drawing.Point(0, 0);
             this.BtnInfocuenta.Name = "BtnInfocuenta";
             this.BtnInfocuenta.Size = new System.Drawing.Size(305, 27);
             this.BtnInfocuenta.TabIndex = 0;
             this.BtnInfocuenta.Text = "Informacion Cuenta ";
-            this.BtnInfocuenta.UseVisualStyleBackColor = true;
+            this.BtnInfocuenta.UseVisualStyleBackColor = false;
             this.BtnInfocuenta.Click += new System.EventHandler(this.button6_Click);
             // 
             // PnlMenu2
@@ -164,13 +169,18 @@ namespace Mix_View.Vista
             // 
             // Btngenero
             // 
+            this.Btngenero.BackColor = System.Drawing.Color.Purple;
             this.Btngenero.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Btngenero.FlatAppearance.BorderSize = 0;
+            this.Btngenero.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Btngenero.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
+            this.Btngenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btngenero.Location = new System.Drawing.Point(0, 0);
             this.Btngenero.Name = "Btngenero";
             this.Btngenero.Size = new System.Drawing.Size(305, 27);
             this.Btngenero.TabIndex = 0;
             this.Btngenero.Text = "Genero ";
-            this.Btngenero.UseVisualStyleBackColor = true;
+            this.Btngenero.UseVisualStyleBackColor = false;
             this.Btngenero.Click += new System.EventHandler(this.button3_Click);
             // 
             // PnlEmergente
@@ -216,13 +226,18 @@ namespace Mix_View.Vista
             // 
             // BtnInicio
             // 
+            this.BtnInicio.BackColor = System.Drawing.Color.Purple;
             this.BtnInicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnInicio.FlatAppearance.BorderSize = 0;
+            this.BtnInicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.BtnInicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
+            this.BtnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnInicio.Location = new System.Drawing.Point(0, 0);
             this.BtnInicio.Name = "BtnInicio";
             this.BtnInicio.Size = new System.Drawing.Size(305, 27);
             this.BtnInicio.TabIndex = 0;
             this.BtnInicio.Text = "Inicio ";
-            this.BtnInicio.UseVisualStyleBackColor = true;
+            this.BtnInicio.UseVisualStyleBackColor = false;
             this.BtnInicio.Click += new System.EventHandler(this.button1_Click);
             // 
             // PnlContenedor
@@ -237,13 +252,14 @@ namespace Mix_View.Vista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(975, 661);
             this.Controls.Add(this.PnlContenedor);
             this.Controls.Add(this.PnlMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmInicio";
+            this.Text = "Inicio";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmInicio_FormClosing);
             this.Load += new System.EventHandler(this.FrmInicio_Load);
             this.PnlMenu.ResumeLayout(false);
