@@ -47,6 +47,7 @@ namespace Mix_View.Vista
             this.PnlBtn1 = new System.Windows.Forms.Panel();
             this.BtnInicio = new System.Windows.Forms.Button();
             this.PnlContenedor = new System.Windows.Forms.Panel();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.PnlMenu.SuspendLayout();
             this.PnlMenu3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -72,12 +73,13 @@ namespace Mix_View.Vista
             // 
             // PnlMenu3
             // 
+            this.PnlMenu3.Controls.Add(this.btnModificar);
             this.PnlMenu3.Controls.Add(this.BtnSalir);
             this.PnlMenu3.Controls.Add(this.BtnInfo);
             this.PnlMenu3.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlMenu3.Location = new System.Drawing.Point(0, 209);
             this.PnlMenu3.Name = "PnlMenu3";
-            this.PnlMenu3.Size = new System.Drawing.Size(305, 55);
+            this.PnlMenu3.Size = new System.Drawing.Size(305, 94);
             this.PnlMenu3.TabIndex = 5;
             this.PnlMenu3.Visible = false;
             // 
@@ -248,6 +250,16 @@ namespace Mix_View.Vista
             this.PnlContenedor.Size = new System.Drawing.Size(670, 661);
             this.PnlContenedor.TabIndex = 1;
             // 
+            // btnModificar
+            // 
+            this.btnModificar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModificar.Location = new System.Drawing.Point(0, 46);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(305, 23);
+            this.btnModificar.TabIndex = 2;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -292,5 +304,6 @@ namespace Mix_View.Vista
         private System.Windows.Forms.Button BtnComedia;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Btngenero;
+        private System.Windows.Forms.Button btnModificar;
     }
 }
