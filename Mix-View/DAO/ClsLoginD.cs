@@ -49,7 +49,7 @@ namespace Mix_View.DAO
                 ClsAlmacenId.Id = ls.FirstOrDefault();
                 if (ls.Count() > 0)
                 {
-                    MessageBox.Show("Bienvenido a Mix-View " + user);
+                    MessageBox.Show("Bienvenido " + user);
 
                 }
             }

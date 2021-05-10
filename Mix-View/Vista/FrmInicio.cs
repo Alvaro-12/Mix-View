@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mix_View.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,10 +68,60 @@ namespace Mix_View.Vista
             }
         }
 
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void BtnMod_Click(object sender, EventArgs e)
+        {
+            FrmCuenta cuenta = new FrmCuenta();
+            cuenta.TxtId.Enabled = false;
+            cuenta.LbId.Visible = false;
+            cuenta.LbUsuario.Visible = false;
+            cuenta.LbEmail.Visible = false;
+            cuenta.LbEdad.Visible = false;
+            cuenta.LbGenero.Visible = false;
+            cuenta.LbPass.Visible = false;
+            cuenta.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
         {
             this.Owner.Show();
             this.Close();
+        }
+
+        private void BtnInfo_Click(object sender, EventArgs e)
+        {
+            FrmCuenta cuenta = new FrmCuenta();
+            cuenta.TxtId.Visible = false;
+            cuenta.TxtUsuario.Visible = false;
+            cuenta.TxtEmail.Visible = false;
+            cuenta.Txtedad.Visible = false;
+            cuenta.groupBox1.Visible = false;
+            cuenta.TxtPass.Visible = false;
+            cuenta.BtnModificar.Visible = false;
+            cuenta.BtnEliminar.Visible = false;
+            cuenta.Show();
+           
         }
     }
 }

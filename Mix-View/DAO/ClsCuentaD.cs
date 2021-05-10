@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Mix_View.DAO
 {
-    class ClsInfoCuentaD
+    class ClsCuentaD
     {
         public void actualuzardatos(Users us)
         {
@@ -27,6 +27,8 @@ namespace Mix_View.DAO
                 MessageBox.Show("Se han realizado los cambios!!");
             }
         }
+
+
         public int Id;
         public string Nombre;
         public string Gmail;
@@ -57,6 +59,17 @@ namespace Mix_View.DAO
 
             }
 
+        }
+
+        public void Eliminar(int Id)
+        {
+            using (MixViewDBEntities db = new MixViewDBEntities())
+            {
+                Users users = db.Users.Where(x => x.Id == Id).Select(x => x).FirstOrDefault();
+
+                db.Users.Remove(users);
+                db.SaveChanges();
+            }
         }
     }
 }
