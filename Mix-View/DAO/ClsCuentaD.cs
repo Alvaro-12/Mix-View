@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Mix_View.DAO
 {
     class ClsCuentaD
-    {
+    {    //comentario
         public void actualuzardatos(Users us)
         {
             using (MixViewDBEntities db = new MixViewDBEntities())
