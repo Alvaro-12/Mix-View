@@ -80,5 +80,20 @@ namespace Mix_View.Vista
             clsInfo.Eliminar(Convert.ToInt32(TxtId.Text));
             this.Dispose();
         }
+
+        private void LbGenero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LbEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
