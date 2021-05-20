@@ -123,9 +123,12 @@ namespace Mix_View.Vista
             cuenta.Show();
            
         }
-
+        int m, mx, my;
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
+            m = 1;
+            mx = e.X;
+            my = e.Y;
 
         }
 
