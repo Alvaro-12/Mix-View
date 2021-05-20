@@ -52,6 +52,7 @@ namespace Mix_View.Vista
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            this.Owner.Show(); 
             this.Close();
         }
 

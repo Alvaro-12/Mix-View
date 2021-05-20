@@ -58,7 +58,7 @@ namespace Mix_View.Vista
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(25, 139);
+            this.label1.Location = new System.Drawing.Point(25, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 13);
             this.label1.TabIndex = 0;
@@ -68,7 +68,7 @@ namespace Mix_View.Vista
             // 
             this.Gmail.AutoSize = true;
             this.Gmail.ForeColor = System.Drawing.Color.White;
-            this.Gmail.Location = new System.Drawing.Point(43, 197);
+            this.Gmail.Location = new System.Drawing.Point(43, 131);
             this.Gmail.Name = "Gmail";
             this.Gmail.Size = new System.Drawing.Size(33, 13);
             this.Gmail.TabIndex = 1;
@@ -78,7 +78,7 @@ namespace Mix_View.Vista
             // 
             this.Label3.AutoSize = true;
             this.Label3.ForeColor = System.Drawing.Color.White;
-            this.Label3.Location = new System.Drawing.Point(43, 266);
+            this.Label3.Location = new System.Drawing.Point(43, 200);
             this.Label3.Name = "Label3";
             this.Label3.Size = new System.Drawing.Size(32, 13);
             this.Label3.TabIndex = 2;
@@ -88,7 +88,7 @@ namespace Mix_View.Vista
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(43, 332);
+            this.label4.Location = new System.Drawing.Point(43, 266);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 3;
@@ -99,7 +99,7 @@ namespace Mix_View.Vista
             this.groupBox1.Controls.Add(this.RdM);
             this.groupBox1.Controls.Add(this.Rdf);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(75, 380);
+            this.groupBox1.Location = new System.Drawing.Point(75, 314);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(288, 51);
             this.groupBox1.TabIndex = 4;
@@ -138,28 +138,28 @@ namespace Mix_View.Vista
             // 
             // TxtNombre
             // 
-            this.TxtNombre.Location = new System.Drawing.Point(147, 132);
+            this.TxtNombre.Location = new System.Drawing.Point(147, 66);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(227, 20);
             this.TxtNombre.TabIndex = 6;
             // 
             // TxtGmail
             // 
-            this.TxtGmail.Location = new System.Drawing.Point(147, 197);
+            this.TxtGmail.Location = new System.Drawing.Point(147, 131);
             this.TxtGmail.Name = "TxtGmail";
             this.TxtGmail.Size = new System.Drawing.Size(227, 20);
             this.TxtGmail.TabIndex = 7;
             // 
             // TxtEdad
             // 
-            this.TxtEdad.Location = new System.Drawing.Point(147, 263);
+            this.TxtEdad.Location = new System.Drawing.Point(147, 197);
             this.TxtEdad.Name = "TxtEdad";
             this.TxtEdad.Size = new System.Drawing.Size(227, 20);
             this.TxtEdad.TabIndex = 8;
             // 
             // TxtPass
             // 
-            this.TxtPass.Location = new System.Drawing.Point(147, 332);
+            this.TxtPass.Location = new System.Drawing.Point(147, 266);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.Size = new System.Drawing.Size(227, 20);
             this.TxtPass.TabIndex = 9;
@@ -172,7 +172,7 @@ namespace Mix_View.Vista
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(170, 452);
+            this.button1.Location = new System.Drawing.Point(170, 386);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
@@ -182,20 +182,21 @@ namespace Mix_View.Vista
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(417, 32);
+            this.panel1.Size = new System.Drawing.Size(416, 32);
             this.panel1.TabIndex = 11;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.Silver;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(3, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
@@ -235,7 +236,7 @@ namespace Mix_View.Vista
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(417, 507);
+            this.ClientSize = new System.Drawing.Size(416, 431);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtPass);
