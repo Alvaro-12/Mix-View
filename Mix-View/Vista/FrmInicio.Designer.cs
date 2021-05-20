@@ -52,6 +52,9 @@ namespace Mix_View.Vista
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.PnlMenu.SuspendLayout();
             this.PnlMenu3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -59,10 +62,12 @@ namespace Mix_View.Vista
             this.panel2.SuspendLayout();
             this.PnlEmergente.SuspendLayout();
             this.PnlBtn1.SuspendLayout();
+            this.PnlContenedor.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // PnlMenu
@@ -315,6 +320,9 @@ namespace Mix_View.Vista
             // 
             // PnlContenedor
             // 
+            this.PnlContenedor.Controls.Add(this.label1);
+            this.PnlContenedor.Controls.Add(this.txtFiltro);
+            this.PnlContenedor.Controls.Add(this.dataGridView1);
             this.PnlContenedor.Location = new System.Drawing.Point(305, 39);
             this.PnlContenedor.Name = "PnlContenedor";
             this.PnlContenedor.Size = new System.Drawing.Size(670, 622);
@@ -374,6 +382,31 @@ namespace Mix_View.Vista
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 121);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(664, 498);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // txtFiltro
+            // 
+            this.txtFiltro.Location = new System.Drawing.Point(152, 68);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(363, 20);
+            this.txtFiltro.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(302, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Buscar";
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,10 +430,13 @@ namespace Mix_View.Vista
             this.panel2.ResumeLayout(false);
             this.PnlEmergente.ResumeLayout(false);
             this.PnlBtn1.ResumeLayout(false);
+            this.PnlContenedor.ResumeLayout(false);
+            this.PnlContenedor.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -429,5 +465,8 @@ namespace Mix_View.Vista
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtFiltro;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
