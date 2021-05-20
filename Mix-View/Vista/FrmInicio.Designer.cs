@@ -122,7 +122,7 @@ namespace Mix_View.Vista
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(305, 23);
             this.BtnModificar.TabIndex = 1;
-            this.BtnModificar.Text = "Modificar y Eliminar";
+            this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = false;
             this.BtnModificar.Click += new System.EventHandler(this.BtnMod_Click);
             // 
@@ -322,7 +322,7 @@ namespace Mix_View.Vista
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);

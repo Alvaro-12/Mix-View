@@ -61,15 +61,7 @@ namespace Mix_View.DAO
 
         }
 
-        public void Eliminar(int Id)
-        {
-            using (MixViewDBEntities db = new MixViewDBEntities())
-            {
-                Users users = db.Users.Where(x => x.Id == Id).Select(x => x).FirstOrDefault();
-
-                db.Users.Remove(users);
-                db.SaveChanges();
-            }
+        
         }
     }
-}
+

@@ -76,9 +76,7 @@ namespace Mix_View.Vista
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            ClsCuentaD clsInfo = new ClsCuentaD();
-            clsInfo.Eliminar(Convert.ToInt32(TxtId.Text));
-            this.Dispose();
+
         }
 
         private void LbGenero_Click(object sender, EventArgs e)
