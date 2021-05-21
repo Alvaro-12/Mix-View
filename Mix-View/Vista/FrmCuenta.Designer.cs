@@ -38,6 +38,7 @@ namespace Mix_View.Vista
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.RbFemenino = new System.Windows.Forms.RadioButton();
             this.RbMsculino = new System.Windows.Forms.RadioButton();
+            this.LbGenero = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@ namespace Mix_View.Vista
             this.LbEmail = new System.Windows.Forms.Label();
             this.LbPass = new System.Windows.Forms.Label();
             this.LbEdad = new System.Windows.Forms.Label();
-            this.LbGenero = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -129,6 +129,16 @@ namespace Mix_View.Vista
             this.RbMsculino.TabStop = true;
             this.RbMsculino.Text = "Masculino";
             this.RbMsculino.UseVisualStyleBackColor = true;
+            // 
+            // LbGenero
+            // 
+            this.LbGenero.AutoSize = true;
+            this.LbGenero.Location = new System.Drawing.Point(8, 0);
+            this.LbGenero.Name = "LbGenero";
+            this.LbGenero.Size = new System.Drawing.Size(42, 13);
+            this.LbGenero.TabIndex = 17;
+            this.LbGenero.Text = "Genero";
+            this.LbGenero.Click += new System.EventHandler(this.LbGenero_Click);
             // 
             // label1
             // 
@@ -215,16 +225,6 @@ namespace Mix_View.Vista
             this.LbEdad.Name = "LbEdad";
             this.LbEdad.Size = new System.Drawing.Size(0, 13);
             this.LbEdad.TabIndex = 16;
-            // 
-            // LbGenero
-            // 
-            this.LbGenero.AutoSize = true;
-            this.LbGenero.Location = new System.Drawing.Point(8, 0);
-            this.LbGenero.Name = "LbGenero";
-            this.LbGenero.Size = new System.Drawing.Size(42, 13);
-            this.LbGenero.TabIndex = 17;
-            this.LbGenero.Text = "Genero";
-            this.LbGenero.Click += new System.EventHandler(this.LbGenero_Click);
             // 
             // panel1
             // 
@@ -323,6 +323,7 @@ namespace Mix_View.Vista
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCuenta";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCuenta";
             this.Load += new System.EventHandler(this.FrmCuenta_Load);
             this.groupBox1.ResumeLayout(false);

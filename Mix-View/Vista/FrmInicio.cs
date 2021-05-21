@@ -166,6 +166,30 @@ namespace Mix_View.Vista
             cargarpeliculas();
         }
 
+        private void BtnTerror_Click(object sender, EventArgs e)
+        {
+            string filtro = "terror";
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarpeliculasgenero(filtro))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
+        }
+
+        private void BtnComedia_Click(object sender, EventArgs e)
+        {
+            string filtro = "comedia";
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarpeliculasgenero(filtro))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
+        }
+
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)
