@@ -20,7 +20,7 @@ namespace Mix_View.Vista
 
         private void FrmInicio_Load(object sender, EventArgs e)
         {
-
+            cargarpeliculas();
         }
 
         private void FrmInicio_FormClosing(object sender, FormClosingEventArgs e)
@@ -137,6 +137,33 @@ namespace Mix_View.Vista
             mx = e.X;
             my = e.Y;
 
+        }
+
+        private void BtnSeries_Click(object sender, EventArgs e)
+        {
+            string filtro = "serie";
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarpeliculastipo(filtro))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
+        }
+        void cargarpeliculas()
+        {
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarpeliculas(txtFiltro.Text))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
+        }
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            cargarpeliculas();
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
