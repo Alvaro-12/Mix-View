@@ -190,6 +190,14 @@ namespace Mix_View.Vista
             }
         }
 
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string urls = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+
+            ClsReproductor cls = new ClsReproductor();
+            cls.Reproducir(urls);
+        }
+
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
             if (m == 1)
