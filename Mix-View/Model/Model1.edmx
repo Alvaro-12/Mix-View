@@ -5,6 +5,16 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="MixViewDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Peliculas_Y_Series">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" />
+          <Property Name="Urls" Type="varchar" MaxLength="200" />
+          <Property Name="Genero" Type="varchar" MaxLength="50" />
+          <Property Name="Tipo" Type="varchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="Id" />
@@ -17,6 +27,7 @@
           <Property Name="Genero" Type="int" />
         </EntityType>
         <EntityContainer Name="MixViewDBModelStoreContainer">
+          <EntitySet Name="Peliculas_Y_Series" EntityType="Self.Peliculas_Y_Series" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -25,6 +36,7 @@
       <Schema Namespace="MixViewDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="MixViewDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Users" EntityType="MixViewDBModel.Users" />
+          <EntitySet Name="Peliculas_Y_Series" EntityType="MixViewDBModel.Peliculas_Y_Series" />
         </EntityContainer>
         <EntityType Name="Users">
           <Key>
@@ -36,6 +48,16 @@
           <Property Name="Gmail" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Edad" Type="Int32" />
           <Property Name="Genero" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Peliculas_Y_Series">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Urls" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="Genero" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Tipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -50,6 +72,17 @@
                 <ScalarProperty Name="Edad" ColumnName="Edad" />
                 <ScalarProperty Name="Gmail" ColumnName="Gmail" />
                 <ScalarProperty Name="Pass" ColumnName="Pass" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Peliculas_Y_Series">
+            <EntityTypeMapping TypeName="MixViewDBModel.Peliculas_Y_Series">
+              <MappingFragment StoreEntitySet="Peliculas_Y_Series">
+                <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+                <ScalarProperty Name="Genero" ColumnName="Genero" />
+                <ScalarProperty Name="Urls" ColumnName="Urls" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>

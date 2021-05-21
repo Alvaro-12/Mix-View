@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="0c02be0cee784b6b878d2abd6a0a2c1d" Name="Diagram1">
         <EntityTypeShape EntityType="MixViewDBModel.Users" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MixViewDBModel.Peliculas_Y_Series" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

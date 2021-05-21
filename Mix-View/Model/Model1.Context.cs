@@ -26,5 +26,6 @@ namespace Mix_View.Model
         }
     
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Peliculas_Y_Series> Peliculas_Y_Series { get; set; }
     }
 }
