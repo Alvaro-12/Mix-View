@@ -41,7 +41,14 @@ namespace Mix_View.Vista
 
         private void Salir_Click(object sender, EventArgs e)
         {
-           
+            string filtro = "Pelicula";
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarpeliculastipo(filtro))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
