@@ -19,11 +19,6 @@ namespace Mix_View.Vista
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void FrmCuenta_Load(object sender, EventArgs e)
         {
             ClsCuentaD cls = new ClsCuentaD();
@@ -74,24 +69,27 @@ namespace Mix_View.Vista
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void BtnEliminar_Click(object sender, EventArgs e)
+        int m, mx, my;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
-
+            m = 1;
+            mx = e.X;
+            my = e.Y;
         }
 
-        private void LbGenero_Click(object sender, EventArgs e)
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
+            if (m == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
 
+            }
         }
 
-        private void LbEmail_Click(object sender, EventArgs e)
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
-
+            m = 0;
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

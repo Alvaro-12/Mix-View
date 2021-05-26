@@ -9,7 +9,7 @@ using System.Windows.Forms;
 namespace Mix_View.DAO
 {
     class ClsCuentaD
-    {    //comentario
+    {    
         public void actualuzardatos(Users us)
         {
             using (MixViewDBEntities db = new MixViewDBEntities())
@@ -35,12 +35,11 @@ namespace Mix_View.DAO
         public int Edad;
         public int Genero;
         public string Pass;
+
         public void cargardatos(int id)
         {
-
             using (MixViewDBEntities db = new MixViewDBEntities())
             {
-
                 Users users = db.Users.Where(x => x.Id == id).Select(x => x).FirstOrDefault();
                 Id = id;
                 Nombre = users.Nombre;
@@ -55,8 +54,6 @@ namespace Mix_View.DAO
                     Genero = 2;
                 }
                 Pass = users.Pass;
-
-
             }
 
         }

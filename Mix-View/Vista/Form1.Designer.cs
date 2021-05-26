@@ -61,7 +61,6 @@ namespace Mix_View
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario :";
-            this.label1.Click += new System.EventHandler(this.Usuario_Click);
             // 
             // label2
             // 
@@ -121,7 +120,6 @@ namespace Mix_View
             this.Opacity = 0.85D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

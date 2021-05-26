@@ -53,7 +53,6 @@ namespace Mix_View.Vista
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnModificar = new System.Windows.Forms.Button();
-            this.BtnEliminar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -62,36 +61,35 @@ namespace Mix_View.Vista
             // 
             // TxtId
             // 
-            this.TxtId.Location = new System.Drawing.Point(195, 74);
+            this.TxtId.Location = new System.Drawing.Point(144, 68);
             this.TxtId.Name = "TxtId";
             this.TxtId.Size = new System.Drawing.Size(139, 20);
             this.TxtId.TabIndex = 0;
-            this.TxtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Location = new System.Drawing.Point(195, 113);
+            this.TxtUsuario.Location = new System.Drawing.Point(144, 107);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(140, 20);
             this.TxtUsuario.TabIndex = 1;
             // 
             // TxtEmail
             // 
-            this.TxtEmail.Location = new System.Drawing.Point(195, 153);
+            this.TxtEmail.Location = new System.Drawing.Point(144, 147);
             this.TxtEmail.Name = "TxtEmail";
             this.TxtEmail.Size = new System.Drawing.Size(140, 20);
             this.TxtEmail.TabIndex = 2;
             // 
             // Txtedad
             // 
-            this.Txtedad.Location = new System.Drawing.Point(195, 191);
+            this.Txtedad.Location = new System.Drawing.Point(144, 185);
             this.Txtedad.Name = "Txtedad";
             this.Txtedad.Size = new System.Drawing.Size(140, 20);
             this.Txtedad.TabIndex = 3;
             // 
             // TxtPass
             // 
-            this.TxtPass.Location = new System.Drawing.Point(195, 227);
+            this.TxtPass.Location = new System.Drawing.Point(144, 221);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.Size = new System.Drawing.Size(139, 20);
             this.TxtPass.TabIndex = 4;
@@ -102,7 +100,7 @@ namespace Mix_View.Vista
             this.groupBox1.Controls.Add(this.RbMsculino);
             this.groupBox1.Controls.Add(this.LbGenero);
             this.groupBox1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.groupBox1.Location = new System.Drawing.Point(128, 272);
+            this.groupBox1.Location = new System.Drawing.Point(77, 266);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(207, 61);
             this.groupBox1.TabIndex = 5;
@@ -138,12 +136,11 @@ namespace Mix_View.Vista
             this.LbGenero.Size = new System.Drawing.Size(42, 13);
             this.LbGenero.TabIndex = 17;
             this.LbGenero.Text = "Genero";
-            this.LbGenero.Click += new System.EventHandler(this.LbGenero_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(125, 77);
+            this.label1.Location = new System.Drawing.Point(74, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 6;
@@ -152,7 +149,7 @@ namespace Mix_View.Vista
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(125, 116);
+            this.label2.Location = new System.Drawing.Point(74, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 7;
@@ -161,7 +158,7 @@ namespace Mix_View.Vista
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(125, 160);
+            this.label3.Location = new System.Drawing.Point(74, 154);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 8;
@@ -170,7 +167,7 @@ namespace Mix_View.Vista
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(125, 198);
+            this.label4.Location = new System.Drawing.Point(74, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 9;
@@ -179,7 +176,7 @@ namespace Mix_View.Vista
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(116, 234);
+            this.label6.Location = new System.Drawing.Point(65, 228);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 11;
@@ -188,7 +185,7 @@ namespace Mix_View.Vista
             // LbId
             // 
             this.LbId.AutoSize = true;
-            this.LbId.Location = new System.Drawing.Point(232, 77);
+            this.LbId.Location = new System.Drawing.Point(181, 71);
             this.LbId.Name = "LbId";
             this.LbId.Size = new System.Drawing.Size(0, 13);
             this.LbId.TabIndex = 12;
@@ -196,7 +193,7 @@ namespace Mix_View.Vista
             // LbUsuario
             // 
             this.LbUsuario.AutoSize = true;
-            this.LbUsuario.Location = new System.Drawing.Point(232, 116);
+            this.LbUsuario.Location = new System.Drawing.Point(181, 110);
             this.LbUsuario.Name = "LbUsuario";
             this.LbUsuario.Size = new System.Drawing.Size(0, 13);
             this.LbUsuario.TabIndex = 13;
@@ -204,16 +201,15 @@ namespace Mix_View.Vista
             // LbEmail
             // 
             this.LbEmail.AutoSize = true;
-            this.LbEmail.Location = new System.Drawing.Point(232, 160);
+            this.LbEmail.Location = new System.Drawing.Point(181, 154);
             this.LbEmail.Name = "LbEmail";
             this.LbEmail.Size = new System.Drawing.Size(0, 13);
             this.LbEmail.TabIndex = 14;
-            this.LbEmail.Click += new System.EventHandler(this.LbEmail_Click);
             // 
             // LbPass
             // 
             this.LbPass.AutoSize = true;
-            this.LbPass.Location = new System.Drawing.Point(232, 234);
+            this.LbPass.Location = new System.Drawing.Point(181, 228);
             this.LbPass.Name = "LbPass";
             this.LbPass.Size = new System.Drawing.Size(0, 13);
             this.LbPass.TabIndex = 15;
@@ -221,28 +217,31 @@ namespace Mix_View.Vista
             // LbEdad
             // 
             this.LbEdad.AutoSize = true;
-            this.LbEdad.Location = new System.Drawing.Point(232, 198);
+            this.LbEdad.Location = new System.Drawing.Point(181, 192);
             this.LbEdad.Name = "LbEdad";
             this.LbEdad.Size = new System.Drawing.Size(0, 13);
             this.LbEdad.TabIndex = 16;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(461, 37);
+            this.panel1.Size = new System.Drawing.Size(334, 37);
             this.panel1.TabIndex = 18;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(386, 8);
+            this.pictureBox2.Location = new System.Drawing.Point(244, 8);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 27);
@@ -256,7 +255,7 @@ namespace Mix_View.Vista
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(420, 8);
+            this.pictureBox1.Location = new System.Drawing.Point(293, 8);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 27);
@@ -272,7 +271,7 @@ namespace Mix_View.Vista
             this.BtnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
             this.BtnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnModificar.Location = new System.Drawing.Point(87, 362);
+            this.BtnModificar.Location = new System.Drawing.Point(117, 360);
             this.BtnModificar.Name = "BtnModificar";
             this.BtnModificar.Size = new System.Drawing.Size(121, 23);
             this.BtnModificar.TabIndex = 19;
@@ -280,28 +279,12 @@ namespace Mix_View.Vista
             this.BtnModificar.UseVisualStyleBackColor = false;
             this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.BackColor = System.Drawing.Color.Purple;
-            this.BtnEliminar.FlatAppearance.BorderSize = 0;
-            this.BtnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.BtnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Plum;
-            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminar.Location = new System.Drawing.Point(254, 362);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(119, 23);
-            this.BtnEliminar.TabIndex = 20;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = false;
-            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
-            // 
             // FrmCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(461, 409);
-            this.Controls.Add(this.BtnEliminar);
+            this.ClientSize = new System.Drawing.Size(334, 409);
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LbEdad);
@@ -360,6 +343,5 @@ namespace Mix_View.Vista
         public System.Windows.Forms.Label LbPass;
         public System.Windows.Forms.Label LbEdad;
         public System.Windows.Forms.Label LbGenero;
-        public System.Windows.Forms.Button BtnEliminar;
     }
 }

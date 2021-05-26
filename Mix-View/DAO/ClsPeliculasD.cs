@@ -9,7 +9,7 @@ namespace Mix_View.DAO
 {
     class ClsPeliculasD
     {
-        public List<Peliculas_Y_Series> cargarpeliculas(string filtro)
+        public List<Peliculas_Y_Series> cargarcontenido(string filtro)
         {
             List<Peliculas_Y_Series> lista;
             using (MixViewDBEntities db = new MixViewDBEntities())
@@ -22,7 +22,7 @@ namespace Mix_View.DAO
             return lista;
         }
 
-        public List<Peliculas_Y_Series> cargarpeliculasgenero(string filtro)
+        public List<Peliculas_Y_Series> cargarcontenidoporgenero(string filtro)
         {
             List<Peliculas_Y_Series> lista;
             using (MixViewDBEntities db = new MixViewDBEntities())
@@ -34,7 +34,8 @@ namespace Mix_View.DAO
 
             return lista;
         }
-        public List<Peliculas_Y_Series> cargarpeliculastipo(string filtro)
+
+        public List<Peliculas_Y_Series> cargarcontenidoportipo(string filtro)
         {
             List<Peliculas_Y_Series> lista;
             using (MixViewDBEntities db = new MixViewDBEntities())

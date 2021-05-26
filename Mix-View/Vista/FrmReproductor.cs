@@ -16,14 +16,11 @@ namespace Mix_View.Vista
         {
             InitializeComponent();
         }
+
         public void video(string url)
         {
             Player.URL = url;
         }
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
-        {
-            
-           
-        }
+
     }
 }

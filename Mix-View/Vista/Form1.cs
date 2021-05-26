@@ -22,29 +22,30 @@ namespace Mix_View
             InitializeComponent();
         }
      
-        private void Usuario_Click(object sender, EventArgs e)
+       
+        void logeo(string usuario, string password)
         {
-
-        }
-
-        private void BtnEntrar_Click(object sender, EventArgs e)
-        {
-
             ClsLoginD logD = new ClsLoginD();
-            logD.entrar(TxtUsuario.Text,TxtPassword.Text);
-            if(ClsAlmacenId.Id != 0)
+            logD.entrar(usuario, password);
+            if (ClsAlmacenId.Id != 0)
             {
                 FrmInicio ini = new FrmInicio();
+                TxtUsuario.Text = "";
+                TxtPassword.Text = "";
+                TxtUsuario.Focus();
                 ini.Show(this);
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Usuario Incorrecto"); 
+                MessageBox.Show("Usuario Incorrecto");
+                TxtUsuario.Focus();
             }
-            
+        }
 
-            
+        private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+            logeo(TxtUsuario.Text,TxtPassword.Text);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -53,8 +54,6 @@ namespace Mix_View
             reg.Show(this);
             this.Hide();
         }
-
-     
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -66,9 +65,6 @@ namespace Mix_View
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

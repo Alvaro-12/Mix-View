@@ -10,21 +10,12 @@ namespace Mix_View.DAO
 {
     class ClsLoginD
     {
-        public int reference;
+       
         public void GuardarUser(Users user)
         {
             Users users = new Users();
             using (MixViewDBEntities db = new MixViewDBEntities())
             {
-                var ls = from l in db.Users
-                         where l.Nombre == user.Nombre
-                         select l;
-                if (ls.Count() > 0)
-                {
-                    reference = 1;
-                }
-                else
-                {
                     users.Nombre = user.Nombre;
                     users.Gmail = user.Gmail;
                     users.Pass = user.Pass;
@@ -35,10 +26,10 @@ namespace Mix_View.DAO
                     db.SaveChanges();
 
                     MessageBox.Show("Se ah Registrado a " + user.Nombre);
-                }
             }
         }
-            public void entrar(string user, string pass)
+
+        public void entrar(string user, string pass)
         {
             using (MixViewDBEntities db = new MixViewDBEntities())
             {

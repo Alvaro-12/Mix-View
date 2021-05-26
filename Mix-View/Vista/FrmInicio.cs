@@ -18,14 +18,123 @@ namespace Mix_View.Vista
             InitializeComponent();
         }
 
-        private void FrmInicio_Load(object sender, EventArgs e)
+        void cargarcontenido()
         {
-            cargarpeliculas();
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarcontenido(txtFiltro.Text))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
         }
 
-        private void FrmInicio_FormClosing(object sender, FormClosingEventArgs e)
+        private void FrmInicio_Load(object sender, EventArgs e)
         {
-            this.Owner.Show();
+            cargarcontenido();
+        }
+
+        private void txtFiltro_TextChanged(object sender, EventArgs e)
+        {
+            cargarcontenido();
+        }
+
+        void cargarcontenidoportipo(string filtro)
+        {
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarcontenidoportipo(filtro))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
+        }
+        private void Salir_Click(object sender, EventArgs e)
+        {
+            cargarcontenidoportipo("Pelicula");
+        }
+
+        private void BtnSeries_Click(object sender, EventArgs e)
+        {
+            cargarcontenidoportipo("Serie");
+        }
+
+        void cargarcontenidoporgenero(string filtro)
+        {
+            ClsPeliculasD peliculasD = new ClsPeliculasD();
+            dataGridView1.Rows.Clear();
+
+            foreach (var peliculas in peliculasD.cargarcontenidoporgenero(filtro))
+            {
+                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
+            }
+        }
+
+        private void BtnTerror_Click(object sender, EventArgs e)
+        {
+            cargarcontenidoporgenero("terror");
+        }
+
+        private void BtnComedia_Click(object sender, EventArgs e)
+        {
+            cargarcontenidoporgenero("comedia");
+        }
+
+        private void BtnMod_Click(object sender, EventArgs e)
+        {
+            FrmCuenta cuenta = new FrmCuenta();
+            cuenta.TxtId.Enabled = false;
+            cuenta.LbId.Visible = false;
+            cuenta.LbUsuario.Visible = false;
+            cuenta.LbEmail.Visible = false;
+            cuenta.LbEdad.Visible = false;
+            cuenta.LbGenero.Visible = false;
+            cuenta.LbPass.Visible = false;
+            cuenta.Show();
+        }
+
+        private void BtnInfo_Click(object sender, EventArgs e)
+        {
+            FrmCuenta cuenta = new FrmCuenta();
+            cuenta.TxtId.Visible = false;
+            cuenta.TxtUsuario.Visible = false;
+            cuenta.TxtEmail.Visible = false;
+            cuenta.Txtedad.Visible = false;
+            cuenta.groupBox1.Visible = false;
+            cuenta.TxtPass.Visible = false;
+            cuenta.BtnModificar.Visible = false;
+            cuenta.Show();
+           
+        }
+       
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string urls = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+
+            ClsReproductor cls = new ClsReproductor();
+            cls.Reproducir(urls);
+        }
+
+        int m, mx, my;
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            m = 1;
+            mx = e.X;
+            my = e.Y;
+
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (m == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            m = 0;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -33,21 +142,10 @@ namespace Mix_View.Vista
             if (PnlEmergente.Visible == false)
             {
                 PnlEmergente.Visible = true;
-            }else
+            }
+            else
             {
                 PnlEmergente.Visible = false;
-            }
-        }
-
-        private void Salir_Click(object sender, EventArgs e)
-        {
-            string filtro = "Pelicula";
-            ClsPeliculasD peliculasD = new ClsPeliculasD();
-            dataGridView1.Rows.Clear();
-
-            foreach (var peliculas in peliculasD.cargarpeliculastipo(filtro))
-            {
-                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
             }
         }
 
@@ -73,19 +171,6 @@ namespace Mix_View.Vista
             {
                 PnlMenu3.Visible = false;
             }
-        }
-
-        private void BtnMod_Click(object sender, EventArgs e)
-        {
-            FrmCuenta cuenta = new FrmCuenta();
-            cuenta.TxtId.Enabled = false;
-            cuenta.LbId.Visible = false;
-            cuenta.LbUsuario.Visible = false;
-            cuenta.LbEmail.Visible = false;
-            cuenta.LbEdad.Visible = false;
-            cuenta.LbGenero.Visible = false;
-            cuenta.LbPass.Visible = false;
-            cuenta.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -116,102 +201,9 @@ namespace Mix_View.Vista
             this.Close();
         }
 
-        private void BtnInfo_Click(object sender, EventArgs e)
+        private void FrmInicio_FormClosing(object sender, FormClosingEventArgs e)
         {
-            FrmCuenta cuenta = new FrmCuenta();
-            cuenta.TxtId.Visible = false;
-            cuenta.TxtUsuario.Visible = false;
-            cuenta.TxtEmail.Visible = false;
-            cuenta.Txtedad.Visible = false;
-            cuenta.groupBox1.Visible = false;
-            cuenta.TxtPass.Visible = false;
-            cuenta.BtnModificar.Visible = false;
-            cuenta.BtnEliminar.Visible = false;
-            cuenta.Show();
-           
-        }
-        int m, mx, my;
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            m = 1;
-            mx = e.X;
-            my = e.Y;
-
-        }
-
-        private void BtnSeries_Click(object sender, EventArgs e)
-        {
-            string filtro = "serie";
-            ClsPeliculasD peliculasD = new ClsPeliculasD();
-            dataGridView1.Rows.Clear();
-
-            foreach (var peliculas in peliculasD.cargarpeliculastipo(filtro))
-            {
-                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
-            }
-        }
-        void cargarpeliculas()
-        {
-            ClsPeliculasD peliculasD = new ClsPeliculasD();
-            dataGridView1.Rows.Clear();
-
-            foreach (var peliculas in peliculasD.cargarpeliculas(txtFiltro.Text))
-            {
-                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
-            }
-        }
-
-        private void txtFiltro_TextChanged(object sender, EventArgs e)
-        {
-            cargarpeliculas();
-        }
-
-        private void BtnTerror_Click(object sender, EventArgs e)
-        {
-            string filtro = "terror";
-            ClsPeliculasD peliculasD = new ClsPeliculasD();
-            dataGridView1.Rows.Clear();
-
-            foreach (var peliculas in peliculasD.cargarpeliculasgenero(filtro))
-            {
-                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
-            }
-        }
-
-        private void BtnComedia_Click(object sender, EventArgs e)
-        {
-            string filtro = "comedia";
-            ClsPeliculasD peliculasD = new ClsPeliculasD();
-            dataGridView1.Rows.Clear();
-
-            foreach (var peliculas in peliculasD.cargarpeliculasgenero(filtro))
-            {
-                dataGridView1.Rows.Add(peliculas.Nombre, peliculas.Genero, peliculas.Tipo, peliculas.Urls);
-            }
-        }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            string urls = dataGridView1.CurrentRow.Cells[3].Value.ToString();
-
-            ClsReproductor cls = new ClsReproductor();
-            cls.Reproducir(urls);
-        }
-
-        private void panel1_MouseMove(object sender, MouseEventArgs e)
-        {
-            if (m == 1)
-            {
-                this.SetDesktopLocation(MousePosition.X - mx, MousePosition.Y - my);
-
-            }
-
-        }
-
-        private void panel1_MouseUp(object sender, MouseEventArgs e)
-        {
-            m = 0;
-
+            this.Owner.Show();
         }
     }
 }

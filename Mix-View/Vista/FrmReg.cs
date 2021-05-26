@@ -19,35 +19,27 @@ namespace Mix_View.Vista
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            ClsLoginD Logind = new ClsLoginD();
-            Users user = new Users();
-            user.Nombre = TxtNombre.Text;
-            user.Gmail = TxtGmail.Text;
-            user.Edad = Convert.ToInt32(TxtEdad.Text);
-            user.Genero = RdM.Checked == true ? 1 : 2; ;
-            user.Pass = TxtPass.Text;
-            Logind.GuardarUser(user);
-            if (Logind.reference == 1)
+            try
             {
-                MessageBox.Show("Usuario ya registrado intenta con otro");
-            }
-            else
-            {
+                ClsLoginD Logind = new ClsLoginD();
+                Users user = new Users();
+                user.Nombre = TxtNombre.Text;
+                user.Gmail = TxtGmail.Text;
+                user.Edad = Convert.ToInt32(TxtEdad.Text);
+                user.Genero = RdM.Checked == true ? 1 : 2; ;
+                user.Pass = TxtPass.Text;
+                Logind.GuardarUser(user);
+
                 this.Owner.Show();
                 this.Close();
             }
-        }
-
-        private void FrmReg_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
+            catch
+            {
+                MessageBox.Show("Se ha producido un error comprueba los datos o intenta con otro nombre de usuario");
+                TxtNombre.Focus();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -60,7 +52,7 @@ namespace Mix_View.Vista
         {
             this.WindowState = FormWindowState.Minimized;
         
-    }
+        }
         int m, mx, my;
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
