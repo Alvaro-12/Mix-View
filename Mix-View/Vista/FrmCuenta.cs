@@ -33,15 +33,15 @@ namespace Mix_View.Vista
             LbEdad.Text = cls.Edad.ToString();
             if (cls.Genero == 1)
             {
-                LbGenero.Text = "Masculino";
+                label7.Text = "Masculino";
                 RbMsculino.Checked = true;
             }
             else
             {
-                LbGenero.Text = "Femenina";
+                label7.Text = "Femenina";
                 RbFemenino.Checked = true;
             }
-            LbPass.Text = cls.Pass;
+            lbPs.Text = cls.Pass;
             TxtPass.Text = cls.Pass;
         }
 

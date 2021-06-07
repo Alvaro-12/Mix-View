@@ -53,6 +53,9 @@ namespace Mix_View.Vista
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnModificar = new System.Windows.Forms.Button();
+            this.lbg = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbPs = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -89,7 +92,7 @@ namespace Mix_View.Vista
             // 
             // TxtPass
             // 
-            this.TxtPass.Location = new System.Drawing.Point(144, 221);
+            this.TxtPass.Location = new System.Drawing.Point(145, 310);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.Size = new System.Drawing.Size(139, 20);
             this.TxtPass.TabIndex = 4;
@@ -100,7 +103,7 @@ namespace Mix_View.Vista
             this.groupBox1.Controls.Add(this.RbMsculino);
             this.groupBox1.Controls.Add(this.LbGenero);
             this.groupBox1.ForeColor = System.Drawing.Color.Cornsilk;
-            this.groupBox1.Location = new System.Drawing.Point(77, 266);
+            this.groupBox1.Location = new System.Drawing.Point(77, 229);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(207, 61);
             this.groupBox1.TabIndex = 5;
@@ -176,7 +179,7 @@ namespace Mix_View.Vista
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(65, 228);
+            this.label6.Location = new System.Drawing.Point(65, 317);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 11;
@@ -209,7 +212,7 @@ namespace Mix_View.Vista
             // LbPass
             // 
             this.LbPass.AutoSize = true;
-            this.LbPass.Location = new System.Drawing.Point(181, 228);
+            this.LbPass.Location = new System.Drawing.Point(397, 144);
             this.LbPass.Name = "LbPass";
             this.LbPass.Size = new System.Drawing.Size(0, 13);
             this.LbPass.TabIndex = 15;
@@ -279,12 +282,40 @@ namespace Mix_View.Vista
             this.BtnModificar.UseVisualStyleBackColor = false;
             this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
+            // lbg
+            // 
+            this.lbg.AutoSize = true;
+            this.lbg.Location = new System.Drawing.Point(65, 256);
+            this.lbg.Name = "lbg";
+            this.lbg.Size = new System.Drawing.Size(42, 13);
+            this.lbg.TabIndex = 20;
+            this.lbg.Text = "Genero";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(190, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 21;
+            // 
+            // lbPs
+            // 
+            this.lbPs.AutoSize = true;
+            this.lbPs.Location = new System.Drawing.Point(192, 317);
+            this.lbPs.Name = "lbPs";
+            this.lbPs.Size = new System.Drawing.Size(0, 13);
+            this.lbPs.TabIndex = 22;
+            // 
             // FrmCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(334, 409);
+            this.Controls.Add(this.lbPs);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lbg);
             this.Controls.Add(this.BtnModificar);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LbEdad);
@@ -343,5 +374,8 @@ namespace Mix_View.Vista
         public System.Windows.Forms.Label LbPass;
         public System.Windows.Forms.Label LbEdad;
         public System.Windows.Forms.Label LbGenero;
+        public System.Windows.Forms.Label lbg;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.Label lbPs;
     }
 }

@@ -88,8 +88,9 @@ namespace Mix_View.Vista
             cuenta.LbUsuario.Visible = false;
             cuenta.LbEmail.Visible = false;
             cuenta.LbEdad.Visible = false;
-            cuenta.LbGenero.Visible = false;
-            cuenta.LbPass.Visible = false;
+            cuenta.lbg.Visible = false;
+            cuenta.lbPs.Visible = false;
+            cuenta.label7.Visible = false;
             cuenta.Show();
         }
 
