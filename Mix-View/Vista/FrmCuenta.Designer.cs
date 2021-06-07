@@ -336,6 +336,7 @@ namespace Mix_View.Vista
             this.Controls.Add(this.TxtId);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmCuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCuenta";

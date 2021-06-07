@@ -43,15 +43,16 @@ namespace Mix_View.Vista
             this.Player.Location = new System.Drawing.Point(-3, 0);
             this.Player.Name = "Player";
             this.Player.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("Player.OcxState")));
-            this.Player.Size = new System.Drawing.Size(792, 323);
+            this.Player.Size = new System.Drawing.Size(858, 361);
             this.Player.TabIndex = 0;
             // 
             // FrmReproductor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 323);
+            this.ClientSize = new System.Drawing.Size(850, 361);
             this.Controls.Add(this.Player);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmReproductor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reproductor";
